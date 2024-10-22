@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lịch sử giao dịch</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="main">
+        
+        <h1>Lịch sử giao dịch</h1>
+        <div>
+            <table border="1" >
+                <tr>
+                    <th>ID</th>
+                    <th>Người gửi</th>
+                    <th>Người nhận</th>
+                    <th>Số tiền</th>
+                    <th>Thời gian</th>
+                </tr>
+                {% for transaction in transactions %}
+                <tr>
+                    <td>{{ transaction[0] }}</td>
+                    <td>{{ transaction[1] }}</td>
+                    <td>{{ transaction[2] }}</td>
+                    <td>{{ transaction[3] }}</td>
+                    <td>{{ transaction[4] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <a href="{{ url_for('index') }}">Quay lại</a>
+        <div>
+    </div>
+</body>
+</html>

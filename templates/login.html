@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="main">
+    
+        <h1>Đăng Nhập</h1>
+        <form method="post" class="transfer">
+            <input type="text" name="username" placeholder="Tài khoản" required>
+            <input type="password" name="password" placeholder="Mật khẩu" required>
+            <button type="submit">Đăng Nhập</button>
+        </form>
+        <a href="/register">Đăng ký</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transfer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Transfer Funds</h1>
+    <p>Your Balance: {{ balance }} USD</p>
+    <form method="post" action="/transfer">
+        Receiver: <input type="text" name="receiver" required><br>
+        Amount: <input type="number" name="amount" required><br>
+        <button type="submit">Transfer</button>
+    </form>
+    <a href="/logout">Logout</a>
+</body>
+</html>

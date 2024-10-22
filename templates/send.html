@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Gửi tiền</title>
+</head>
+<body>
+    <h1>Gửi tiền</h1>
+    <form method="post">
+        <label for="receiver">Người nhận:</label>
+        <input type="text" name="receiver" required>
+        <br>
+        <label for="amount">Số tiền:</label>
+        <input type="number" step="0.01" name="amount" required>
+        <br>
+        <input type="submit" value="Gửi tiền">
+    </form>
+    <a href="{{ url_for('index') }}">Quay lại</a>
+</body>
+</html>

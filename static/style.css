@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(52, 52, 52);
+    color: hsl(119, 100%, 50%);
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 50%;
+    height: 430px;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+a{
+    color: hsl(119, 100%, 50%) !important;
+    text-decoration: none;
+    margin: 10px 0;
+}
+a:hover{
+    color: hsl(119, 45%, 43%) !important;
+}
+.transfer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.transfer input{
+    border: none;
+    border-radius: 5px;
+    padding:  0 10px;
+    height: 40px;
+    margin: 10px  0;
+    outline: none;
+}
+.transfer button{
+    height: 30px;
+    width: 170px;
+    margin: 10px auto;
+}
+th, td {
+    padding: 10px 15px; /* Khoảng cách bên trong của các ô */
+}
+.main > div {
+    overflow-y: scroll;
+    margin-bottom: 50px ;
+}
+.main > div::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
